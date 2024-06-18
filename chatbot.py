@@ -67,8 +67,8 @@ def invoke_titan(prompt):
         body=body,
         contentType='application/json',
         accept='application/json',
-        guardrailIdentifier='arn:aws:bedrock:us-east-1:683883881884:guardrail/64blac89050a',
-        guardrailVersion='DRAFT'
+        # guardrailIdentifier='arn:aws:bedrock:us-east-1:683883881884:guardrail/64blac89050a',
+        # guardrailVersion='1'
     )
     response_body = json.loads(response.get('body').read())
     print(response_body)
